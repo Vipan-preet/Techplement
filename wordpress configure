@@ -1,0 +1,8 @@
+cd /var/www/html
+sudo mv wp-config-sample.php wp-config.php
+sudo nano wp-config.php
+define('DB_NAME', 'wordpress');
+define('DB_USER', 'wordpressuser');
+define('DB_PASSWORD', 'yourpassword');
+define('DB_HOST', 'localhost');
+sudo systemctl restart apache2
